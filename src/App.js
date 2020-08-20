@@ -9,6 +9,7 @@ import LogoImersao from './components/LogoImerssao';
 import BannerMutine from './components/BannerMutine';
 import TagMutine from './components/TagMutine';
 import TitleMutine from './components/TitleMutine';
+import DescripitionMutine from './components/DescripitionMutine';
 
 
 
@@ -24,8 +25,9 @@ function App() {
       </HeaderMutine>
 
       <BannerMutine>
-        <TagMutine>Front-End</TagMutine>
+        <TagMutine>R6-Rainbow Six</TagMutine>
         <TitleMutine>Circuito Feminino 2020 - Etapa 3 - Playday 2</TitleMutine>
+        <DescripitionMutine>Uma bela partidas das meninas, com as melhores estrategias e os melhores narradores!</DescripitionMutine>
       </BannerMutine>
 
       <FooterMutine>
