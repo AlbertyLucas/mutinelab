@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import HeaderMutine from './components/HeaderMutine';
+import LogoMutinelab from './components/LogoMutine';
+import ButtonMutine from './components/ButtonMutine';
+import FooterMutine from './components/FoooterMutine';
+// import LinkMutine from './components/LinkMutine';
+// import HighlighMutine from './components/HighlighMutine';
+import LogoImersao from './components/LogoImerssao';
+import BannerMutine from './components/BannerMutine';
+import TagMutine from './components/TagMutine';
+import TitleMutine from './components/TitleMutine';
 
+
+
+// JSX = (J)AVA (S)CRIPT (X)ML/ PODE ESCREVER HTML DENTRO DO JS.
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <>
+      <HeaderMutine>
+        <LogoMutinelab />
+
+        <ButtonMutine>Novo Vídeo</ButtonMutine>
+
+      </HeaderMutine>
+
+      <BannerMutine>
+        <TagMutine>Front-End</TagMutine>
+        <TitleMutine>Circuito Feminino 2020 - Etapa 3 - Playday 2</TitleMutine>
+      </BannerMutine>
+
+      <FooterMutine>
+        <LogoMutinelab />
+        <p>Site feito na <a href="https://www.alura.com.br/"><LogoImersao /></a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </FooterMutine>
+    </>
   );
 }
 
 export default App;
+
+// para o codígo limpo é sempre bom usar (caso não seja necessario a div), somente 
+// o abre e fecha das tags.
