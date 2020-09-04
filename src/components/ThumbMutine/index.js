@@ -1,10 +1,13 @@
-import styled from 'styled-components';
+import React from 'react';
+import { WrapperThumb, Thumb, Avatar } from './style';
 
-const ThumbMutine = styled.img`
-    border-radius: 4px;
-    border: 4rem solid var(--color-front-end);
-    width: 640px;
-
-`;
+function ThumbMutine({ src, alt, avatar, channelName }) {
+    return (
+        <WrapperThumb>
+            <Thumb src={src} alt={alt} />
+            <Avatar src={avatar} alt={channelName} />
+        </WrapperThumb>
+    );
+}
 
 export default ThumbMutine;

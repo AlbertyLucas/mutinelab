@@ -10,6 +10,7 @@ import TitleMutine from './components/TitleMutine';
 import DescripitionMutine from './components/DescripitionMutine';
 import ThumbMutine from './components/ThumbMutine';
 import r6feminino from './assets/img/r6feminino.png';
+import r6 from './assets/img/r6.png';
 
 
 
@@ -31,7 +32,12 @@ function App() {
           <TitleMutine>Circuito Feminino 2020 - Etapa 3 - Playday 1</TitleMutine>
           <DescripitionMutine>O circuito feminino brasileiro de R6!</DescripitionMutine>
         </Text>
-        <ThumbMutine src={r6feminino} alt="Thumb do R6 Feminino" />
+        <ThumbMutine
+          src={r6feminino}
+          alt="Thumb do R6 Feminino"
+          avatar={r6}
+          channelName="R6esportBR"
+        />
       </BannerMutine>
 
       <FooterMutine>
