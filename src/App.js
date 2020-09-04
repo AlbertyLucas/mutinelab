@@ -4,7 +4,7 @@ import LogoMutinelab from './components/LogoMutine';
 import ButtonMutine from './components/ButtonMutine';
 import FooterMutine from './components/FoooterMutine';
 import LogoImersao from './components/LogoImerssao';
-import BannerMutine from './components/BannerMutine';
+import { BannerMutine, Text } from './components/BannerMutine';
 import TagMutine from './components/TagMutine';
 import TitleMutine from './components/TitleMutine';
 import DescripitionMutine from './components/DescripitionMutine';
@@ -26,10 +26,11 @@ function App() {
       </HeaderMutine>
 
       <BannerMutine>
-        <TagMutine>R6-Rainbow Six</TagMutine>
-        <TitleMutine>Circuito Feminino 2020 - Etapa 3 - Playday 1</TitleMutine>
-        <DescripitionMutine>O circuito feminino Brasileiro pegando fogo!</DescripitionMutine>
-
+        <Text>
+          <TagMutine>Rainbow Six</TagMutine>
+          <TitleMutine>Circuito Feminino 2020 - Etapa 3 - Playday 1</TitleMutine>
+          <DescripitionMutine>O circuito feminino brasileiro de R6!</DescripitionMutine>
+        </Text>
         <ThumbMutine src={r6feminino} alt="Thumb do R6 Feminino" />
       </BannerMutine>
 
