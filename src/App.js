@@ -1,15 +1,15 @@
 import React from 'react';
-import HeaderMutine from './components/HeaderMutine';
+import { HeaderMutine, Wrapper } from './components/HeaderMutine';
 import LogoMutinelab from './components/LogoMutine';
 import ButtonMutine from './components/ButtonMutine';
 import FooterMutine from './components/FoooterMutine';
-// import LinkMutine from './components/LinkMutine';
-// import HighlighMutine from './components/HighlighMutine';
 import LogoImersao from './components/LogoImerssao';
 import BannerMutine from './components/BannerMutine';
 import TagMutine from './components/TagMutine';
 import TitleMutine from './components/TitleMutine';
 import DescripitionMutine from './components/DescripitionMutine';
+import ThumbMutine from './components/ThumbMutine';
+import r6feminino from './assets/img/r6feminino.png';
 
 
 
@@ -18,16 +18,19 @@ function App() {
   return (
     <>
       <HeaderMutine>
-        <LogoMutinelab />
+        <Wrapper>
+          <LogoMutinelab />
 
-        <ButtonMutine>Novo Vídeo</ButtonMutine>
-
+          <ButtonMutine>Novo Vídeo</ButtonMutine>
+        </Wrapper>
       </HeaderMutine>
 
       <BannerMutine>
         <TagMutine>R6-Rainbow Six</TagMutine>
-        <TitleMutine>Circuito Feminino 2020 - Etapa 3 - Playday 2</TitleMutine>
-        <DescripitionMutine>Uma bela partidas das meninas, com as melhores estrategias e os melhores narradores!</DescripitionMutine>
+        <TitleMutine>Circuito Feminino 2020 - Etapa 3 - Playday 1</TitleMutine>
+        <DescripitionMutine>O circuito feminino Brasileiro pegando fogo!</DescripitionMutine>
+
+        <ThumbMutine src={r6feminino} alt="Thumb do R6 Feminino" />
       </BannerMutine>
 
       <FooterMutine>
