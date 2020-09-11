@@ -19,7 +19,6 @@ export const Thumb = styled.img`
     `;
 
 export const WrapperThumb = styled.figure`
-    /* opacity: 0; */
     border-radius: 4px;
     position: relative;
     border: var(--border    ) solid var(--color-front-end);
@@ -27,44 +26,57 @@ export const WrapperThumb = styled.figure`
     overflow: hidden;
     cursor: pointer;
     transition: transform 100ms linear;
-    /* background-color: var(--color-front-end); */
-
-    &:hover {
-       
-        transform: translate(var(--move-space), var(--move-space));
-       
-        & > ${Avatar} {
-            transform: translateX(0);
-            opacity: 1;
-            transition: transform 100ms 150ms linear, opacity 300ms 150ms linear;
-        }
-    }
 `;
 
 export const Background = styled.div`
     --space: 20rem;
     --border: 4rem;
-    /* --move-border: calc(var(--border) * -1); */
     --move-space: calc(var(--space) * -1);
     position: relative;
-background-color: var(--color-front-end);
+    background-color: var(--color-front-end);
 
-    &::before {
+    &::before,
+    &::after {
         content: ' ';
         position: absolute;
+        width: calc(var(--space) * 1.4);
+        height: calc(var(--space) * 1.4);
+        background-color: var(--color-front-end);
+        transition: transform 100ms linear;
+    }
+
+    &::before {
         right: 0;
         top: 0;
-        width: var(--space);
-        height: var(--space);
-        background-color: red;
-
+        transform: rotate(45deg) scale(0);
         transform-origin: right top;
-        transition: 100ms linear;
+    }
+
+    &::after {
+        left: 0;
+        bottom: 0;
+        transform-origin: left bottom;
+        z-index: -1;
+        transform: rotate(-45deg) scale(0);
     }
 
     &:hover {
-        &::before {
-            transform: rotate(45deg);
+            &::before {
+                transform: rotate(45deg) scale(1);
+            }
+            &::after {
+                transform: rotate(-45deg) scale(1);
+            }
+
+            & > ${WrapperThumb} {
+        
+        transform: translate(var(--move-space), var(--move-space));
+        
+            & > ${Avatar} {
+                transform: translateX(0);
+                opacity: 1;
+                transition: transform 100ms 150ms linear, opacity 300ms 150ms linear;
+            }
         }
     }
-`;
+`
