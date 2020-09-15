@@ -8,7 +8,7 @@ export const Avatar = styled.img`
     width: 50rem;
     height: 50rem;
     border-radius: 50%;
-    border: 2rem solid var(--color-front-end);
+    border: 2rem solid var(--color-gamedec);
     transform: translatex(calc((100% + var(--space)) * -1));
     opacity: 0;
     transition: transform 200ms linear, opacity 100ms linear;
@@ -21,7 +21,7 @@ export const Thumb = styled.img`
 export const WrapperThumb = styled.figure`
     border-radius: 4px;
     position: relative;
-    border: var(--border    ) solid var(--color-front-end);
+    border: var(--border    ) solid var(--color-gamedec);
     width: 640px;
     overflow: hidden;
     cursor: pointer;
@@ -33,7 +33,7 @@ export const Background = styled.div`
     --border: 4rem;
     --move-space: calc(var(--space) * -1);
     position: relative;
-    background-color: var(--color-front-end);
+    background-color: var(--color-gamedec);
 
     &::before,
     &::after {
@@ -41,7 +41,7 @@ export const Background = styled.div`
         position: absolute;
         width: calc(var(--space) * 1.4);
         height: calc(var(--space) * 1.4);
-        background-color: var(--color-front-end);
+        background-color: var(--color-gamedec);
         transition: transform 100ms linear;
     }
 
