@@ -1,12 +1,13 @@
 import React from 'react';
-import { WrapperThumb, Thumb, Avatar, Background } from './style';
+import AvatarMutine from '../AvatarMutine';
+import { WrapperThumb, Thumb, Avatar, Background, Channel } from './style';
 
 function ThumbMutine({ src, alt, avatar, channelName }) {
     return (
         <Background>
             <WrapperThumb>
                 <Thumb src={src} alt={alt} />
-                <Avatar src={avatar} alt={channelName} />
+                <AvatarMutine photo={avatar} channelName={channelName} />
             </WrapperThumb>
         </Background>
     );

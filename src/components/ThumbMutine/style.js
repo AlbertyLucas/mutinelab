@@ -1,18 +1,5 @@
 import styled from 'styled-components';
-
-export const Avatar = styled.img`
-    
-    position: absolute;
-    top: var(--space);
-    left: var(--space);
-    width: 50rem;
-    height: 50rem;
-    border-radius: 50%;
-    border: 2rem solid var(--color-gamedec);
-    transform: translatex(calc((100% + var(--space)) * -1));
-    opacity: 0;
-    transition: transform 200ms linear, opacity 100ms linear;
-`;
+import { WrapperAvatar } from '../AvatarMutine/style';
 
 export const Thumb = styled.img`
     width: 100%;
@@ -26,7 +13,18 @@ export const WrapperThumb = styled.figure`
     overflow: hidden;
     cursor: pointer;
     transition: transform 100ms linear;
-`;
+    
+& > ${WrapperAvatar}{
+        
+        position: absolute;
+        top: var(--space);
+        left: var(--space);
+        margin-right: 10rem;
+        transform: translatex(calc((100% + var(--space)) * -1));
+        opacity: 0;
+        transition: transform 200ms linear, opacity 100ms linear;
+    }
+ `;
 
 export const Background = styled.div`
     --space: 20rem;
@@ -69,10 +67,9 @@ export const Background = styled.div`
             }
 
             & > ${WrapperThumb} {
+                     transform: translate(var(--move-space), var(--move-space));
         
-        transform: translate(var(--move-space), var(--move-space));
-        
-            & > ${Avatar} {
+            & > ${WrapperAvatar} {
                 transform: translateX(0);
                 opacity: 1;
                 transition: transform 100ms 150ms linear, opacity 300ms 150ms linear;
