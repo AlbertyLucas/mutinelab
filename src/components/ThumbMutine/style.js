@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import { WrapperAvatar } from '../AvatarMutine/style';
 
+export const Title = styled.figcaption`
+    position: absolute;
+    left: 20rem;
+    bottom: 20rem;
+    font-size: 25rem;
+    color: var(--color-gray-light);
+`;
+
 export const Thumb = styled.img`
     width: 100%;
     transition: filter  100ms linear;
@@ -9,7 +17,7 @@ export const Thumb = styled.img`
 export const WrapperThumb = styled.figure`
     border-radius: 4px;
     position: relative;
-    border: var(--border    ) solid var(--color-gamedec);
+    border: var(--border) solid var(--color-gamedec);
     width: 640px;
     overflow: hidden;
     cursor: pointer;

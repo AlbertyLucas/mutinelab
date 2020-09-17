@@ -34,9 +34,10 @@ function App() {
         </Text>
         <ThumbMutine
           src={r6feminino}
-          alt="Thumb do R6 Feminino"
+          alt="Circuito de R6 Feminino"
+          title="Circuito Feminino - 2020 - Etapa 3 - PlayDay 1"
           avatar={r6}
-          channelName="R6esportBR"
+          channelName="R6 e-sport BR"
         />
       </BannerMutine>
 
