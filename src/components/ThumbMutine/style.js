@@ -3,7 +3,8 @@ import { WrapperAvatar } from '../AvatarMutine/style';
 
 export const Thumb = styled.img`
     width: 100%;
-    `;
+    transition: filter  100ms linear;
+`;
 
 export const WrapperThumb = styled.figure`
     border-radius: 4px;
@@ -68,6 +69,10 @@ export const Background = styled.div`
 
             & > ${WrapperThumb} {
                      transform: translate(var(--move-space), var(--move-space));
+                    
+                    & > ${Thumb} {
+                        filter: brightness(0.6);
+                    }
         
             & > ${WrapperAvatar} {
                 transform: translateX(0);

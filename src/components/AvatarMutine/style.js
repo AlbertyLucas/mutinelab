@@ -10,6 +10,7 @@ export const Avatar = styled.img`
     height: 50rem;
     border-radius: 50%;
     border: 2rem solid var(--color-gamedec);
+    margin-right: 10rem;    
 `;
 
 export const WrapperAvatar = styled.figure`
