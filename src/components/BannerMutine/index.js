@@ -23,7 +23,5 @@ export const BannerMutine = styled.section`
     align-items: center;
     max-height: 70vh;
     height: 100vh;
-
-    
 `;
 

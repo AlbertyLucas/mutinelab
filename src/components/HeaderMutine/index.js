@@ -6,7 +6,7 @@ import container from '../../Tools/container';
 export const HeaderMutine = styled.header`
     padding: 20rem 0;
     background-color: var( --color-black-dark);
-    border-bottom: 4px solid var(--color-primary-medium);
+    border-bottom: 4px solid var(--color-gamedec);
     
     @media(max-width: 800px) {
         padding: 15rem 16rem;
