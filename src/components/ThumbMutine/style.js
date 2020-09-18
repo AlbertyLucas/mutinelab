@@ -1,6 +1,19 @@
 import styled from 'styled-components';
 import { WrapperAvatar } from '../AvatarMutine/style';
 
+
+export const Timer = styled.span`
+    position: absolute;
+    right: var(--space);
+    bottom: var(--space);
+    font-size: 15rem;
+    color: var(--color-gray-light);
+    background-color: var(--color-black-medium);
+    padding: 2rem 4rem;
+    opacity: 0;
+    transition: transform 200ms linear, opacity 100ms linear;
+`;
+
 export const Title = styled.figcaption`
     position: absolute;
     left: var(--space);
@@ -99,6 +112,11 @@ export const Background = styled.div`
                 opacity: 1;
                 transition: transform 150ms 200ms linear, opacity 300ms 200ms linear;
             }
+
+            & > ${Timer} {
+                opacity: 1;
+                transition: transform 150ms 200ms linear, opacity 300ms 200ms linear;
+                }
         }
     }
 `
