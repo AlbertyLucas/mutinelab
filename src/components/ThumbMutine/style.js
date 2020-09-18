@@ -3,10 +3,16 @@ import { WrapperAvatar } from '../AvatarMutine/style';
 
 export const Title = styled.figcaption`
     position: absolute;
-    left: 20rem;
-    bottom: 20rem;
+    left: var(--space);
+    bottom: var(--space);
     font-size: 25rem;
     color: var(--color-gray-light);
+    font-weight: 300;
+    background-color: var(--color-black-medium);
+    padding: 4rem 6rem; 
+    transform: translateY(calc((100% + var(--space))* -1));
+    opacity: 0;
+    transition: transform 200ms linear, opacity 100ms linear;
 `;
 
 export const Thumb = styled.img`
@@ -81,11 +87,17 @@ export const Background = styled.div`
                     & > ${Thumb} {
                         filter: brightness(0.6);
                     }
-        
+
             & > ${WrapperAvatar} {
                 transform: translateX(0);
                 opacity: 1;
-                transition: transform 100ms 150ms linear, opacity 300ms 150ms linear;
+                transition: transform 150ms 200ms linear, opacity 300ms 200ms linear;
+            }
+
+            & > ${Title} {
+                transform: translateY(0);
+                opacity: 1;
+                transition: transform 150ms 200ms linear, opacity 300ms 200ms linear;
             }
         }
     }
