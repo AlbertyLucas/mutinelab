@@ -10,7 +10,7 @@ import TitleMutine from './components/TitleMutine';
 import DescripitionMutine from './components/DescripitionMutine';
 import ThumbMutine from './components/ThumbMutine';
 import r6feminino from './assets/img/r6feminino.png';
-import r6 from './assets/img/r6.png';
+import R6 from './assets/img/r6.png';
 
 
 
@@ -22,7 +22,7 @@ function App() {
         <Wrapper>
           <LogoMutinelab />
 
-          <ButtonMutine>Novo Vídeo</ButtonMutine>
+          <ButtonMutine as="a" href="/video/new">Novo Vídeo</ButtonMutine>
         </Wrapper>
       </HeaderMutine>
 
@@ -36,7 +36,7 @@ function App() {
           src={r6feminino}
           alt="Circuito de R6 Feminino"
           title="Circuito Feminino - 2020 - PlayDay 1"
-          avatar={r6}
+          avatar={R6}
           channelName="R6 e-sport BR"
           timer="04:44:40"
         />

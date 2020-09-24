@@ -8,7 +8,7 @@ const ButtonMutine = styled.button`
     border-radius: 4px;
     font-size: 16rem;
     cursor: pointer;
-    
 
+    text-decoration: none;
 `;
 export default ButtonMutine;
