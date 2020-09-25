@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { WrapperAvatar } from '../AvatarMutine/style';
 
-
 export const Timer = styled.span`
     position: absolute;
     right: var(--space);
@@ -119,4 +118,4 @@ export const Background = styled.div`
                 }
         }
     }
-`
+`;

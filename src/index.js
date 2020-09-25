@@ -15,6 +15,6 @@ ReactDOM.render(
         <Route path="/video/new" component={Video} />
       </Switch>
     </BrowserRouter>
-  </React.StrictMode >,
-  document.getElementById('root')
+  </React.StrictMode>,
+  document.getElementById('root'),
 );

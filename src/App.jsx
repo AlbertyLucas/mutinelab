@@ -12,8 +12,6 @@ import ThumbMutine from './components/ThumbMutine';
 import r6feminino from './assets/img/r6feminino.png';
 import R6 from './assets/img/r6.png';
 
-
-
 // JSX = (J)AVA (S)CRIPT (X)ML/ PODE ESCREVER HTML DENTRO DO JS.
 function App() {
   return (
@@ -52,6 +50,3 @@ function App() {
 }
 
 export default App;
-
-// para o codígo limpo é sempre bom usar (caso não seja necessario a div), somente 
-// o abre e fecha das tags.
