@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const HighlighMutine = styled.strong`
-    font-weight: bold;
+  font-weight: bold;
 `;
 export default HighlighMutine;
